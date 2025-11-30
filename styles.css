@@ -1,0 +1,451 @@
+/* basic setup for page layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.student-page {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* simple container to center content */
+.student-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.student-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(249, 250, 251, 0.95);
+  border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(10px);
+  z-index: 20;
+}
+
+.student-header .student-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem 0;
+}
+
+.student-brand .student-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  letter-spacing: .05em;
+}
+
+/* nav items */
+.student-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.student-nav-toggle {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 1.4rem;
+}
+
+.student-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.student-nav-list a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: .95rem;
+}
+
+.student-nav-list a:hover {
+  color: #1d4ed8;
+}
+
+/* ---------------- HERO ---------------- */
+
+.student-hero {
+  padding: 3.5rem 0 2.5rem;
+  background: linear-gradient(135deg, #3e5c83, #073666);
+}
+
+.student-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.student-hero-text h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.student-hero-text p {
+  max-width: 32rem;
+  color: #e5e7eb;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.student-hero-image img {
+  border-radius: 1.5rem;
+  object-fit: cover;
+  height: 100%;
+  box-shadow: 0 10px 35px rgba(0,0,0,.25);
+}
+
+/* ----- buttons ----- */
+
+.student-btn-primary,
+.student-btn-secondary {
+  border-radius: 999px;
+  padding: .7rem 1.4rem;
+  font-size: .95rem;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.student-btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.student-btn-secondary {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #1d4ed8;
+}
+
+/* ---------------- SECTIONS ---------------- */
+
+.student-section {
+  padding: 3.5rem 0;
+}
+
+.student-section-muted {
+  background-color: #f3f4f6;
+}
+
+.student-section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------------- DESTINATIONS ---------------- */
+
+.student-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.75rem;
+}
+
+.student-destination-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.student-destination-card img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.student-destination-card h3 {
+  margin: .9rem 1.1rem .4rem;
+}
+
+.student-destination-card p {
+  margin: 0 1.1rem 1.1rem;
+  color: #4b5563;
+}
+
+/* ---------------- PACKAGES ---------------- */
+
+.student-package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.75rem;
+}
+
+.student-package-card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  border: 1px solid #e5e7eb;
+}
+
+.student-package-card h3 {
+  margin: 0;
+}
+
+.student-package-tagline {
+  font-size: .9rem;
+  color: #6b7280;
+}
+
+.student-package-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-top: .5rem;
+}
+
+.student-package-duration {
+  font-size: .9rem;
+  color: #4b5563;
+}
+
+/* ---------------- STEPS ---------------- */
+
+.student-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 1.5rem;
+}
+
+.student-step-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+}
+
+.student-step-number {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .7rem;
+}
+
+/* ---------------- TESTIMONIALS ---------------- */
+
+.student-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+  gap: 1.75rem;
+}
+
+.student-testimonial-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.25rem;
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.student-testimonial-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto .75rem;
+}
+
+.student-testimonial-text {
+  color: #4b5563;
+  font-size: .95rem;
+}
+
+.student-testimonial-rating {
+  color: #f59e0b;
+}
+
+/* ---------------- BLOG ---------------- */
+
+.student-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 1.75rem;
+}
+
+.student-blog-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-blog-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.student-blog-link {
+  margin: 0 1.2rem 1rem;
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+/* ---------------- STATS ---------------- */
+
+.student-stats-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.student-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.2rem;
+}
+
+.student-stats-item {
+  background: #fff;
+  padding: 1.1rem;
+  border-radius: 1.25rem;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.student-stats-value {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #1d4ed8;
+}
+
+.student-stats-label {
+  color: #6b7280;
+  font-size: .9rem;
+}
+
+/* newsletter box */
+.student-newsletter {
+  background: #1d4ed8;
+  color: white;
+  padding: 1.7rem;
+  border-radius: 1.5rem;
+}
+
+.student-newsletter-form {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.student-newsletter-form input {
+  padding: .7rem .9rem;
+  border-radius: 999px;
+  border: none;
+  flex: 1 1 180px;
+}
+
+/* ---------------- CONTACT + FOOTER ---------------- */
+
+.student-contact-layout {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.student-contact-box {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.student-contact-form .student-form-row + .student-form-row {
+  margin-top: .9rem;
+}
+
+.student-contact-form input,
+.student-contact-form textarea {
+  width: 100%;
+  padding: .7rem .9rem;
+  border-radius: .75rem;
+  border: 1px solid #d1d5db;
+}
+
+.student-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 2rem;
+}
+
+.student-footer-column h4 {
+  margin: 0 0 .7rem;
+}
+
+.student-footer-column a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: .9rem;
+}
+
+.student-footer-column a:hover {
+  color: #1d4ed8;
+}
+
+.student-social-list {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.student-footer-bottom {
+  text-align: center;
+  padding: 1rem 0 1.4rem;
+  font-size: .85rem;
+  color: #6b7280;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width: 800px) {
+  .student-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-stats-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .student-nav-toggle {
+    display: inline-block;
+  }
+
+  .student-nav-list {
+    display: none;
+  }
+}
+
+@media(max-width: 640px) {
+  .student-section {
+    padding: 2.6rem 0;
+  }
+
+  .student-contact-box,
+  .student-newsletter {
+    padding-inline: 1.25rem;
+  }
+}

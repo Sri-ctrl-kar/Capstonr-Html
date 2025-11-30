@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Travel Website</title>
+  <!-- main css file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="student-page">
+
+  <!-- top navbar area -->
+  <header class="student-header">
+    <div class="student-container">
+      <!-- logo / site name -->
+      <div class="student-brand">
+        <span class="student-logo">Wanderlust Trips</span>
+      </div>
+
+      <!-- navigation links (not making mobile menu logic here) -->
+      <nav class="student-nav">
+        <button class="student-nav-toggle" aria-label="Open menu">
+          ☰
+        </button>
+        <ul class="student-nav-list">
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero / main banner section -->
+  <section class="student-hero">
+    <div class="student-container student-hero-grid">
+      <div class="student-hero-text">
+        <h1>Plan Your Next Trip With Us</h1>
+        <p>
+          This is a demo travel website made for practice. You can check a few
+          popular places, see some sample tour packages and get a basic idea of
+          how a travel agency page can look.
+        </p>
+        <a href="#packages" class="student-btn-primary">See Tour Packages</a>
+      </div>
+
+      <div class="student-hero-image">
+        <img
+          src="thumbnails/cover.jpeg"
+          alt="Sea view with waves"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- destinations section -->
+  <section id="destinations" class="student-section">
+    <div class="student-container">
+      <h2 class="student-section-title">Popular Destinations</h2>
+
+      <div class="student-destination-grid">
+        <!-- card 1 -->
+        <article class="student-destination-card">
+          <img
+            src="thumbnails/maldives.avif"
+            alt="Maldives beach"
+          />
+          <h3>Maldives</h3>
+          <p>
+            Great choice if you like clear water, calm beaches and relaxing
+            vibes.
+          </p>
+        </article>
+
+        <!-- card 2 -->
+        <article class="student-destination-card">
+          <img
+            src="thumbnails/paris.jpeg"
+            alt="Paris city"
+          />
+          <h3>Paris</h3>
+          <p>
+            Famous for the Eiffel Tower, cafes and beautiful streets. Good for
+            city lovers.
+          </p>
+        </article>
+
+        <!-- card 3 -->
+        <article class="student-destination-card">
+          <img
+            src="thumbnails/bali.avif"
+            alt="Bali nature"
+          />
+          <h3>Bali</h3>
+          <p>
+            A mix of nature, temples and beaches. Nice option if you like both
+            culture and nature.
+          </p>
+        </article>
+
+        <!-- card 4 -->
+        <article class="student-destination-card">
+          <img
+            src="thumbnails/new york.jpg"
+            alt="New York city"
+          />
+          <h3>New York</h3>
+          <p>
+            Busy city with tall buildings, nightlife and a lot of things to see
+            in a short time.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- tour packages -->
+  <section id="packages" class="student-section student-section-muted">
+    <div class="student-container">
+      <h2 class="student-section-title">Sample Tour Packages</h2>
+
+      <div class="student-package-grid">
+        <article class="student-package-card">
+          <img src="thumbnails/maldives.avif" alt="Maldives Escape" />
+          <h3>Maldives Escape</h3>
+          <p class="student-package-tagline">
+            Includes stay at a resort, basic water activities and breakfast.
+          </p>
+          <p class="student-package-price">$1,499</p>
+          <p class="student-package-duration">7 Days / 6 Nights</p>
+          <button class="student-btn-secondary">Book Now</button>
+        </article>
+
+        <article class="student-package-card">
+          <img src="thumbnails/paris.jpeg" alt="Paris Discovery" />
+          <h3>Paris Discovery</h3>
+          <p class="student-package-tagline">
+            City tour, Eiffel Tower view and time for your own exploring.
+          </p>
+          <p class="student-package-price">$1,199</p>
+          <p class="student-package-duration">5 Days / 4 Nights</p>
+          <button class="student-btn-secondary">Book Now</button>
+        </article>
+
+        <article class="student-package-card">
+          <img src="thumbnails/bali.avif" alt="Bali Adventure" />
+          <h3>Bali Adventure</h3>
+          <p class="student-package-tagline">
+            Includes some temple visits, rice fields and one free beach day.
+          </p>
+          <p class="student-package-price">$999</p>
+          <p class="student-package-duration">6 Days / 5 Nights</p>
+          <button class="student-btn-secondary">Book Now</button>
+        </article>
+
+        <article class="student-package-card">
+          <img src="thumbnails/new york.jpg" alt="New York Explorer" />
+          <h3>New York Explorer</h3>
+          <p class="student-package-tagline">
+            City highlights, popular landmarks and free time for shopping.
+          </p>
+          <p class="student-package-price">$1,299</p>
+          <p class="student-package-duration">5 Days / 4 Nights</p>
+          <button class="student-btn-secondary">Book Now</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- how it works -->
+  <section id="how-it-works" class="student-section">
+    <div class="student-container">
+      <h2 class="student-section-title">How The Booking Works</h2>
+
+      <div class="student-steps-grid">
+        <div class="student-step-card">
+          <div class="student-step-number">1</div>
+          <h3>Pick a place</h3>
+          <p>
+            First, choose the destination you are interested in from the list
+            above.
+          </p>
+        </div>
+
+        <div class="student-step-card">
+          <div class="student-step-number">2</div>
+          <h3>Choose a package</h3>
+          <p>
+            Check the sample tour packages and see which one matches your
+            budget.
+          </p>
+        </div>
+
+        <div class="student-step-card">
+          <div class="student-step-number">3</div>
+          <h3>Contact us</h3>
+          <p>
+            Fill the contact form with your details. We can then discuss and
+            finalise the plan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials / reviews -->
+  <section id="testimonials" class="student-section student-section-muted">
+    <div class="student-container">
+      <h2 class="student-section-title">What People Say</h2>
+
+      <div class="student-testimonial-grid">
+        <article class="student-testimonial-card">
+          <img
+            src="thumbnails/girl.jpg"
+            alt="Photo of Emily"
+            class="student-testimonial-avatar"
+          />
+          <h3>Emily R.</h3>
+          <p class="student-testimonial-text">
+            "The Maldives trip was very relaxing. The hotel and activities were
+            nicely managed."
+          </p>
+          <p class="student-testimonial-rating">★★★★★</p>
+        </article>
+
+        <article class="student-testimonial-card">
+          <img
+            src="thumbnails/man.jpg"
+            alt="Photo of James"
+            class="student-testimonial-avatar"
+          />
+          <h3>James T.</h3>
+          <p class="student-testimonial-text">
+            "Paris package gave us enough time to see major spots and still
+            enjoy coffee and walks."
+          </p>
+          <p class="student-testimonial-rating">★★★★☆</p>
+        </article>
+
+        <article class="student-testimonial-card">
+          <img
+            src="thumbnails/lady.jpg"
+            alt="Photo of Sophia"
+            class="student-testimonial-avatar"
+          />
+          <h3>Sophia L.</h3>
+          <p class="student-testimonial-text">
+            "Bali tour was a good mix of nature and temples. Overall good
+            experience."
+          </p>
+          <p class="student-testimonial-rating">★★★★★</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- blog section -->
+  <section id="blog" class="student-section">
+    <div class="student-container">
+      <h2 class="student-section-title">Travel Blog Ideas</h2>
+
+      <div class="student-blog-grid">
+        <article class="student-blog-card">
+          <img
+            src="thumbnails/top 10 beaches.avif"
+            alt="Beach photo"
+          />
+          <div>
+            <h3>Best Beaches For A Short Trip</h3>
+            <p>
+              Small list of beaches that are easy to visit for 3-4 day
+              vacations with friends or family.
+            </p>
+            <a href="#" class="student-blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <article class="student-blog-card">
+          <img
+            src="thumbnails/stars.avif"
+            alt="Budget travel photo"
+          />
+          <div>
+            <h3>Basic Tips For Budget Travel</h3>
+            <p>
+              Simple ways to save money on hotels, food and transport without
+              missing the fun.
+            </p>
+            <a href="#" class="student-blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <article class="student-blog-card">
+          <img
+            src="thumbnails/swiss.avif"
+            alt="Food around the world"
+          />
+          <div>
+            <h3>Food To Try When You Travel</h3>
+            <p>
+              Few examples of local dishes from different countries that you
+              should at least try once.
+            </p>
+            <a href="#" class="student-blog-link">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- stats + newsletter -->
+  <section class="student-section student-section-muted">
+    <div class="student-container student-stats-layout">
+      <!-- basic stats -->
+      <div class="student-stats-grid">
+        <div class="student-stats-item">
+          <span class="student-stats-value">20+</span>
+          <span class="student-stats-label">Cities Covered</span>
+        </div>
+        <div class="student-stats-item">
+          <span class="student-stats-value">5K+</span>
+          <span class="student-stats-label">Travellers Helped</span>
+        </div>
+        <div class="student-stats-item">
+          <span class="student-stats-value">50+</span>
+          <span class="student-stats-label">Tour Plans</span>
+        </div>
+        <div class="student-stats-item">
+          <span class="student-stats-value">10</span>
+          <span class="student-stats-label">Years Experience</span>
+        </div>
+      </div>
+
+      <!-- newsletter part -->
+      <div class="student-newsletter">
+        <h3>Get Travel Updates On Email</h3>
+        <p>
+          If you want, you can drop your email below. We can send you simple
+          updates and travel ideas once in a while.
+        </p>
+        <form class="student-newsletter-form">
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit" class="student-btn-primary">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact and footer -->
+  <section id="contact" class="student-section">
+    <div class="student-container student-contact-layout">
+      <!-- basic contact form -->
+      <div class="student-contact-box">
+        <h2 class="student-section-title">Contact Us</h2>
+        <p style="text-align:center; margin-top:-1rem; margin-bottom:1rem;">
+          This form is just for demo. You can use it to collect details in a real project.
+        </p>
+        <form class="student-contact-form">
+          <div class="student-form-row">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="student-form-row">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="student-form-row">
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="student-btn-primary">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- footer links -->
+      <footer class="student-footer-grid">
+        <div class="student-footer-column">
+          <h4>About This Site</h4>
+          <ul>
+            <li><a href="#">Project Overview</a></li>
+            <li><a href="#">Why Travel?</a></li>
+            <li><a href="#">Future Improvements</a></li>
+          </ul>
+        </div>
+
+        <div class="student-footer-column">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#destinations">Maldives</a></li>
+            <li><a href="#destinations">Paris</a></li>
+            <li><a href="#destinations">Bali</a></li>
+            <li><a href="#destinations">New York</a></li>
+          </ul>
+        </div>
+
+        <div class="student-footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ (Sample)</a></li>
+            <li><a href="#contact">Contact Form</a></li>
+            <li><a href="#">Terms (Placeholder)</a></li>
+            <li><a href="#">Privacy (Placeholder)</a></li>
+          </ul>
+        </div>
+
+        <div class="student-footer-column">
+          <h4>Follow (Demo)</h4>
+          <ul class="student-social-list">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <div class="student-footer-bottom">
+    © 2024 Wanderlust Trips. Simple travel website made for practice.
+  </div>
+
+</body>
+</html>

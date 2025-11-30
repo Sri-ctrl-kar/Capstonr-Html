@@ -1,0 +1,35 @@
+# Wanderlust Trips - Travel Website
+
+A simple, responsive travel website demo showcasing popular destinations, tour packages, and booking information.
+
+## Features
+
+- **Header Navigation** - Easy-to-use navigation menu with links to all sections
+- **Hero Section** - Eye-catching banner with call-to-action
+- **Destinations** - Grid display of 4 popular travel destinations (Maldives, Paris, Bali, New York)
+- **Tour Packages** - Sample tour packages with pricing and duration
+- **How It Works** - 3-step booking process explanation
+- **Testimonials** - Customer reviews and ratings
+- **Blog Section** - Travel tips and guides
+- **Newsletter** - Email subscription form
+- **Contact Form** - Demo contact form for inquiries
+- **Footer** - Links and social media placeholders
+
+## File Structure
+```text
+/ (project root)
+├─ index.html                 # Main HTML page (ties together layout, sections, and components)
+├─ README.md                  # Project documentation (this file)
+├─ css/
+│  └─ styles.css              # Core stylesheet (the provided CSS)
+├─ js/
+│  └─ main.js                 # Optional scripts: nav toggle, form handlers, small interactions
+├─ assets/
+│  ├─ images/                 # Hero, destinations, testimonials, blog thumbnails
+│  └─ icons/                  # SVGs or icon sprites
+├─ data/
+│  └─ destinations.json       # Sample data for destinations / packages (optional)
+├─ dist/ or build/            # Production-ready build output (if using a bundler)
+├─ .gitignore                 # Files/folders to ignore in git
+└─ package.json               # Dev scripts and dependencies (optional)
+```
